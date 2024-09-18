@@ -1,0 +1,191 @@
+/* Global styles for the page */
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('moroccan-flower.png'); /* Background pattern */
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #fff; 
+    padding: 20px 40px;
+    border-bottom: 2.5px solid #b0b0b0;
+    width: 100vw; 
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+/* Style for "Title" */
+header h1 {
+    font-family: 'Pacifico', cursive; /* Handwritten-style font */
+    font-size: 2.5em;
+    color: #004080;
+    margin: 0;
+    padding-left: 20px; 
+    white-space: nowrap; 
+    transition: color 0.3s ease, transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+header h1:hover {
+    color: #FF4081; /* Change text color to pink on hover */
+    transform: scale(1.1); /* Scale the text by 10% on hover */
+}
+
+/* Navigation styles */
+nav {
+    display: flex; 
+    justify-content: flex-end; 
+    gap: 20px; /* Space between links */
+    padding-right: 20px; 
+}
+
+span.bar {
+    font-size: 1.5em; /* Adjust this value to make it bigger */
+    padding: 0 10px; /* Optional: Adds horizontal spacing around the bar */
+    color: #929292; /* Optional: Set color of the bar */
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif;
+    color: #004080;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FF4081; /* Hover effect */
+}
+
+/* Container for both sections */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+    flex: 1; 
+}
+
+/* About Me and Connect with Me layout */
+main {
+    display: flex;
+    justify-content: space-between; /* Ensures About Me and Connect with Me are side by side */
+    align-items: flex-start;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* About Me Section */
+#about {
+    width: 60%; 
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-right: 20px; /* Space between About Me and Connect with Me */
+}
+
+#about h2 {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.divider {
+    height: 2px;
+    background-color: #000000;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Align image and text vertically in About Me */
+#about img {
+    float: left; 
+    margin: 20px 20px 10px 0; /* Adds space around the image (right, top, bottom) */
+    width: 180px; 
+    border-radius: 10%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft drop shadow */
+}
+
+/* Hover effect for About Me image */
+#about img:hover {
+    transform: scale(1.1); /* Scale the image by 10% on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+}
+
+#about p {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Connect with Me Section */
+#connect {
+    width: 25%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+#connect h3 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Display icons horizontally with some spacing */
+#connect img {
+    display: inline-block;
+    margin: 10px 5px;
+    width: 50px; /* Adjust the size of the icons */
+    height: 50px;
+    background-color: transparent; /* Ensure the background is transparent */
+    border-radius: 15%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a soft shadow */
+}
+
+/* Hover effect */
+#connect img:hover {
+    transform: scale(1.1); /* Scale the icon by 10% on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b0b0b0;
+    color: white;
+    border-top: 4px solid #004080;
+    width: 100%;
+    box-sizing: border-box;
+    position: s;
+    bottom: 0;
+}
+
+/* General paragraph styles */
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
